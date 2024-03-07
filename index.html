@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="marksheet.js"></script>
+    <title>Marksheet</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <h1>STUDENT MARKSHEET</h1>
+        <div class="intro">
+            <form action="#">
+                <label class="s">Name:</label>
+                <input type="text" id="name">
+                <label class="c">Class:</label>
+                <input type="number" id="class"><br><br>
+                <label class="f">Father's Name:</label>
+                <input type="text" id="f_name">           
+                <label class="r">Roll No:</label>
+                <input type="number" id="roll">
+            </form>
+        </div>
+        <br>
+        <h3><u>Marks:</u></h3>
+        <div class="subj">
+            <table>
+                <tr>
+                    <th id="sub">Subjects</th>
+                    <th id="tt">Total Marks</th>
+                    <th id="oo">Obtained Marks</th>
+                </tr>
+                <tr>
+                    <td id="phy">Physics</td>
+                    <td id="t1">100</td>
+                    <td><input type="number" id="o1"></td>
+                </tr>
+                <tr>
+                    <td id="chem">Chemistry</td>
+                    <td id="t2">100</td>
+                    <td><input type="number" id="o2"></td>
+                </tr>
+                <tr>
+                    <td id="math">Mathematics</td>
+                    <td id="t3">100</td>
+                    <td><input type="number" id="o3"></td>
+                </tr>
+                <tr>
+                    <td id="eng">English</td>
+                    <td id="t4">100</td>
+                    <td><input type="number" id="o4"></td>
+                </tr>
+                <tr>
+                    <td id="ur">Urdu</td>
+                    <td id="t5">100</td>
+                    <td><input type="number" id="o5"></td>
+                </tr>
+            </table>
+            <button onclick="return calc()">Generate Result</button>
+        </div>
+        <br>
+        <h3 class="result"><u>Result:</u></h3>
+        <table>
+            <tr>
+                <th id="total">Total Marks</th>
+                <td>500</td>
+            </tr>
+            <tr>
+                <th id="om">Total Obtained Marks</th>
+                <td id="omm"></td>
+            </tr>
+            <tr>
+                <th id="p">Percentage</th>
+                <td id="pp"></td>
+            </tr>
+            <tr>
+                <th id="g">Grade</th>
+                <td id="gg"></td>
+            </tr>
+            <tr>
+                <th id="pf">Remarks</th>
+                <td id="abc"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html> 
